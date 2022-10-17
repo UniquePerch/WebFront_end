@@ -1,0 +1,68 @@
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.left-nav {
+    display: block;
+    position: fixed;
+    background-color: #ffffff;
+    height: 100%;
+    width: 12.5%;
+}
+
+#active {
+    border-left: 5px solid #79ff65;
+}
+
+.left-nav li {
+    list-style: none;
+    text-align: center;
+}
+
+.left-nav a {
+    display: block;
+    background-image: linear-gradient(to left, #79ff65 50%, rgba(57, 63, 77, 0.0) 50%);
+    transition: all 0.3s linear;
+    color: black;
+    text-decoration: none;
+    padding: 20px 5px;
+    background-size: 200% 100%;
+    font-size: large;
+    font-weight: bold;
+}
+
+.left-nav a:hover {
+    background-position: -100%, 0%;
+    color: #ffffff;
+    background-color: #79ff65;
+}
+
+#navlab {
+    width: 100%;
+    text-align: center;
+    color: white;
+    display: block;
+    height: 80px;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: x-large;
+    padding-top: 19%;
+    background-color: #79ff65;
+}
+
+#main {
+    min-height: 100vh;
+    width: calc(100vw - 17px);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-cont {
+    margin-left: 14%;
+}

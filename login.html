@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/login.css" rel="stylesheet">
+    <title>吉他谱平台</title>
+    <style>
+        .container {
+            height: 100%;
+            width: 100%;
+            background: url(/image/login.jpg) no-repeat center;
+            background-size: 100%;
+        }
+        @font-face {
+            font-family: 'webfont';
+            font-display: swap;
+            src: url('/font/webfont.eot'); /* IE9 */
+            src: url('/font/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('/font/webfont.woff2') format('woff2'),
+            url('/font/webfont.woff') format('woff'), /* chrome、firefox */
+            url('/font/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('/font/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .web-font {
+            font-family: "webfont" !important;
+            font-size: 28px;
+            font-style: normal;
+            align-content: center;
+            font-weight: bolder;
+            text-align: center;
+            line-height: 200px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="login-wrapper">
+        <i class="web-font">欢迎来到Willow的吉他谱平台</i>
+        <div class="form-wrapper">
+            <input type="text" name="username" placeholder="用户名" class="input-item">
+            <input type="password" name="password" placeholder="密码" class="input-item">
+            <button class="btn" onclick="window.location.href='index.html'">登录</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
