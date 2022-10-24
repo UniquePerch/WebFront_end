@@ -8,12 +8,16 @@
     padding: 0;
 }
 
+.left {
+    height: 100vh;
+    width: 12.5vw;
+}
+
 .left-nav {
     display: block;
-    position: fixed;
     background-color: #ffffff;
-    height: 100%;
-    width: 12.5%;
+    height: 100vh;
+    width: 100%;
 }
 
 #active {
@@ -58,16 +62,16 @@
 }
 
 #main {
+    display: flex;
     min-height: 100vh;
-    width: calc(100vw - 17px);
+    width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .main-cont {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    width: 87.5vw;
+    height: 100vh;
     display: grid;
     grid-template-columns: 50px 50px 50px;
     grid-template-rows: 50px 50px 50px;
