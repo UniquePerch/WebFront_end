@@ -3,18 +3,8 @@
     padding: 0;
 }
 
-html {
-    height: 100%;
-}
-
-body {
-    height: 100%;
-}
-
 .login-wrapper {
     background-color: #fff;
-    /*text-align: center;*/
-    font-size: 16px;
     width: 800px;
     height: auto;
     border-radius: 15px;
@@ -22,41 +12,15 @@ body {
     transform: translate(30%,10%)
 }
 
+p{
+    font-size: 20px;
+}
+
 .header {
     font-size: 25px;
     font-weight: bold;
     text-align: center;
     line-height: 200px;
-}
-
-.input-item {
-    display: block;
-    width: 100%;
-    align-self: auto;
-    margin-bottom: 30px;
-    border: 0;
-    padding: 10px;
-    border-bottom: 2px solid rgb(128, 125, 125);
-    font-size: 15px;
-    outline: none;
-}
-
-.input-item::placeholder {
-    text-transform: uppercase;
-}
-
-.btn {
-    text-align-all: center;
-    padding: 10px;
-    width: 50%;
-    height: 45px;
-    margin-top: 35px;
-    font-size: large;
-    background-color: #79ff65;
-    color: #ffffff;
-    font-weight: bold;
-    border-radius: 15px;
-    border: 0;
 }
 
 .msg {
