@@ -60,7 +60,7 @@
         background-repeat: no-repeat;
     }
 }
-@media handheld {
+@media only screen and (max-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3)  {
     .left {
         height: 100vh;
         width: 20vw;

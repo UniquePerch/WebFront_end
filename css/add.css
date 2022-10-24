@@ -64,7 +64,7 @@
         color: #abc1ee;
     }
 }
-@media handheld {
+@media only screen and (max-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
     * {
         margin: 0;
         padding: 0;
