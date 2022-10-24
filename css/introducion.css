@@ -13,12 +13,12 @@ body {
 
 .login-wrapper {
     background-color: #fff;
-    text-align: center;
-    font-size: 50px;
+    /*text-align: center;*/
+    font-size: 20px;
     width: 800px;
-    height: 700px;
+    height: auto;
     border-radius: 15px;
-    padding: 0 50px;
+    padding: 40px 50px;
     transform: translate(30%,10%)
 }
 
