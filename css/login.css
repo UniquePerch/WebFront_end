@@ -18,10 +18,9 @@ body {
     height: 588px;
     border-radius: 15px;
     padding: 0 50px;
-
-    position: relative; /*相对定位*/
+    position: absolute; /*相对定位*/
     left: 35%;
-    top: 20%;
+    top: 10%;
 }
 
 .header {

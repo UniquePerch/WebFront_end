@@ -3,30 +3,25 @@
     padding: 0;
 }
 
-html {
-    height: 100%;
-}
-
-body {
-    height: 100%;
+.main-cont {
+    width: 87.5vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 21.875vw 21.875vw 21.875vw 21.875vw;
+    grid-template-rows: 50vh 50vh;
 }
 
 .login-wrapper {
     background-color: #fff;
     text-align: center;
     font-size: 50px;
-    width: 800px;
+    width: 40vw;
     height: auto;
     border-radius: 15px;
     padding: 0 50px;
-    transform: translate(30%,10%)
-}
-
-.header {
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 200px;
+    position: absolute;
+    left: 450px;
+    top: 40px
 }
 
 .input-item {
