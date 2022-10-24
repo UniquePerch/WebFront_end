@@ -16,7 +16,7 @@ body {
     text-align: center;
     font-size: 50px;
     width: 800px;
-    height: auto;
+    height: 700px;
     border-radius: 15px;
     padding: 0 50px;
     transform: translate(30%,10%)
@@ -51,7 +51,6 @@ body {
     width: 50%;
     height: 45px;
     margin-top: 35px;
-    margin-bottom: 35px;
     font-size: large;
     background-color: #79ff65;
     color: #ffffff;
