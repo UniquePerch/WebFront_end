@@ -82,10 +82,10 @@
     .login-wrapper {
         background-color: #fff;
         text-align: center;
-        font-size: 50px;
-        width: 700px;
+        font-size: 1vmin;
+        width: 30vw;
         height: auto;
-        border-radius: 15px;
+        border-radius: 1vmin;
         padding: 0 50px;
     }
 
@@ -93,11 +93,11 @@
         display: block;
         width: 100%;
         align-self: auto;
-        margin-bottom: 30px;
+        margin-bottom: 5vw;
         border: 0;
-        padding: 10px;
+        padding: 0.9vmin;
         border-bottom: 2px solid rgb(128, 125, 125);
-        font-size: 15px;
+        font-size: 1vmin;
         outline: none;
 
     }
@@ -109,14 +109,14 @@
     .btn {
         text-align-all: center;
         width: 50%;
-        height: 45px;
-        margin-top: 25px;
-        margin-bottom: 40px;
+        height: 4.1vmin;
+        margin-top: 0.023%;
+        margin-bottom: 3.7vmin;
         font-size: large;
         background-color: #79ff65;
         color: #ffffff;
         font-weight: bold;
-        border-radius: 15px;
+        border-radius: 5%;
         border: 0;
     }
 

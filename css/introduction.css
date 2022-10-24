@@ -33,10 +33,10 @@
 
     .login-wrapper {
         background-color: #fff;
-        width: 800px;
+        width: 74vmin;
         height: auto;
         border-radius: 15px;
-        padding: 40px 50px;
+        padding: 3.7vmin 4.6vmin;
     }
 
     .main-cont {
@@ -49,6 +49,6 @@
     }
 
     p{
-        font-size: 20px;
+        font-size: 0.1vmin;
     }
 }
