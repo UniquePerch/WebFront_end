@@ -54,6 +54,7 @@
     font-size: x-large;
     padding-top: 19%;
     background-color: #79ff65;
+    position: relative;
 }
 
 #main {
@@ -64,5 +65,12 @@
 }
 
 .main-cont {
-    margin-left: 14%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px;
 }
+
+.item {  border: 1px solid #e5e4e9;}
