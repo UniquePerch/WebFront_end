@@ -1,4 +1,4 @@
-@media screen {
+@media only screen {
     .left {
         height: 100vh;
         width: 12.5vw;
