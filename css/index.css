@@ -8,7 +8,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 21.875vw 21.875vw 21.875vw 21.875vw;
-    grid-template-rows: 50vh 50vh;
+    grid-template-rows: 50vh 50vh 50vh 50vh;
 }
 
 .item {  border: 1px solid #e5e4e9;}
