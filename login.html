@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
 <!--    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,minimum-scale=0.3 ,user-scalable=yes">-->
-    <link href="css/login.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="./css/login.css" rel="stylesheet">
+    <link href="./css/normalize.css" rel="stylesheet">
     <title>吉他谱平台</title>
+    <script src="./js/loginscript.js"></script>
     <style>
         .container {
             height: 100%;
@@ -42,11 +43,20 @@
     <div class="login-wrapper">
         <i class="web-font" >欢迎来到Willow的吉他谱平台</i>
         <div class="form-wrapper">
-            <input type="text" name="username" placeholder="用户名" class="input-item">
-            <input type="password" name="password" placeholder="密码" class="input-item">
-            <button class="btn" onclick="window.location.href='index.html'">登录</button>
+            <input type="text" name="username" placeholder="用户名" class="input-item" id="username">
+            <input type="password" name="password" placeholder="密码" class="input-item" id="password">
+            <button class="btn" onclick="login()">登录</button>
+            <p>用户名：willow</p>
+            <p>密码：lyh701721</p>
         </div>
     </div>
 </div>
 </body>
+<script>
+    window.addEventListener('keydown', (e) => {
+        if(e.key === 'Enter') {
+            login()
+        }
+    })
+</script>
 </html>

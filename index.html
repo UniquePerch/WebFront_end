@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-<!--    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,minimum-scale=0.3 ,user-scalable=yes">-->
+    <!--    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,minimum-scale=0.3 ,user-scalable=yes">-->
     <title>首页</title>
-    <link href="css/nav.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="./css/nav.css" rel="stylesheet" type="text/css">
+    <link href="./css/index.css" rel="stylesheet" type="text/css">
+    <link href="./css/normalize.css" rel="stylesheet" type="text/css">
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/axios.js"></script>
+    <script src="./js/index.js"></script>
     <style>
         #main {
             width: 100%;
@@ -14,32 +18,43 @@
             background: url(image/login.jpg) repeat-y center;
             background-size: 100%;
         }
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 35px 0;
+            background-color: #fff;
+        }
+
+        .item p {
+            flex: 1;
+        }
+
+        .item a {
+            text-decoration: none;
+            color: #000;
+            font-size: 35px;
+        }
     </style>
 </head>
+
 <body>
-<div id="main">
-    <div class="left">
-        <nav class="left-nav">
-            <p id="navlab">导航栏</p>
-            <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="introduction.html"> 简介</a></li>
-                <li><a>琴谱搜索</a></li>
-                <li><a href="add.html">添加琴谱</a></li>
-                <li><a href="login.html">登出</a></li>
-            </ul>
-        </nav>
+    <div id="main">
+        <div class="left">
+            <nav class="left-nav">
+                <p id="navlab">导航栏</p>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="introduction.html"> 简介</a></li>
+                    <li><a href="add.html">添加琴谱</a></li>
+                    <li><a href="login.html">登出</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-cont">
+        </div>
     </div>
-    <div class="main-cont">
-        <div class="item">1</div>
-        <div class="item">1</div>
-        <div class="item">1</div>
-        <div class="item">1</div>
-        <div class="item">1</div>
-        <div class="item">1</div>
-        <div class="item">1</div>
-        <div class="item">1</div>
-    </div>
-</div>
 </body>
 </html>

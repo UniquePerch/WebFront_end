@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>添加琴谱</title>
   <link href="css/add.css" rel="stylesheet">
   <link href="css/nav.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-<!--  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,minimum-scale=0.3 ,user-scalable=yes">-->
+  <script src="js/jQuery.js"></script>
+  <script src="js/add.js"></script>
+  <!--  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,minimum-scale=0.3 ,user-scalable=yes">-->
   <style>
     #main {
       width: 100%;
@@ -16,36 +19,46 @@
     }
   </style>
 </head>
+
 <body>
-<div id="main">
-  <div class="left">
-    <nav class="left-nav">
-      <p id="navlab">导航栏</p>
-      <ul>
-        <li><a href="index.html">首页</a></li>
-        <li><a href="introduction.html">简介</a></li>
-        <li><a >琴谱搜索</a></li>
-        <li><a href="add.html">添加琴谱</a></li>
-        <li><a href="login.html">登出</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="main-cont">
-    <div class="login-wrapper">
-      <p style="line-height: 150px">添加琴谱</p>
-      <div class="form-wrapper">
-        <input type="text" name="username" placeholder="曲名" class="input-item">
-        <input type="text" name="password" placeholder="作者" class="input-item">
-        <input type="text" name="album" placeholder="所属专辑" class="input-item">
-        <input type="text" name="place" placeholder="专辑位置" class="input-item">
-        <input type="text" name="date" placeholder="发布年份（格式YYYY-MM-DD）" class="input-item">
-        <input type="file" class="#">
-        <div>
-          <button class="btn" onclick="window.location.href='index.html'">上传</button>
-        </div>
+  <div id="main">
+    <div class="left">
+      <nav class="left-nav">
+        <p id="navlab">导航栏</p>
+        <ul>
+          <li><a href="index.html">首页</a></li>
+          <li><a href="introduction.html">简介</a></li>
+          <li><a href="add.html">添加琴谱</a></li>
+          <li><a href="login.html">登出</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-cont">
+      <div class="login-wrapper">
+        <p style="line-height: 150px">添加琴谱</p>
+        <form class="form-wrapper" action="http://47.99.66.125:9090/upload" method="post" enctype="multipart/form-data">
+          <input type="text" name="username" placeholder="曲名" class="input-item">
+          <input type="text" name="author" placeholder="作者" class="input-item">
+          <input type="text" name="album" placeholder="所属专辑" class="input-item">
+          <input type="text" name="place" placeholder="专辑位置" class="input-item">
+          <input type="text" name="date" placeholder="发布年份（格式YYYY-MM-DD）" class="input-item">
+          <input type="file" placeholder="上传文件" class="file" name="f1">
+          <button type="submit" class="butn" onclick="window.location.href='index.html'">上传</button>
+        </form>
       </div>
     </div>
   </div>
-</div>
+  <script>
+    let iptItems = document.querySelectorAll(".input-item")
+    let btn = document.querySelector(".butn")
+    btn.addEventListener("click", function () {
+      let valArr = JSON.parse(localStorage.getItem('item')) || []
+      iptItems.forEach(item => {
+        valArr.push(item.value)
+      })
+      localStorage.setItem('item', JSON.stringify(valArr))
+    })
+  </script>
 </body>
+
 </html>
