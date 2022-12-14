@@ -15,7 +15,7 @@ function render(data) {
             <p>所属专辑: ${item.Album}</p>
             <p>专辑位置: ${item.Place}</p>
             <p>发布年份: ${item.Date}</p>
-            <a href="../source/${item.Username}">查看专辑</a>
+            <a href="http://47.99.66.125:9090/source/${item.Username}">查看专辑</a>
         `
         div.className = "item"
 
