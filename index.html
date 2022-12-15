@@ -20,6 +20,7 @@
         }
 
         .item {
+            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -27,7 +28,13 @@
             padding: 35px 0;
             background-color: #fff;
         }
-
+        .item .delete {
+            position: absolute;
+            top: 0;
+            right: 5px;
+            cursor: pointer;
+            font-size: 25px;
+        }
         .item p {
             flex: 1;
         }

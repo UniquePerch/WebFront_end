@@ -48,17 +48,6 @@
       </div>
     </div>
   </div>
-  <script>
-    let iptItems = document.querySelectorAll(".input-item")
-    let btn = document.querySelector(".butn")
-    btn.addEventListener("click", function () {
-      let valArr = JSON.parse(localStorage.getItem('item')) || []
-      iptItems.forEach(item => {
-        valArr.push(item.value)
-      })
-      localStorage.setItem('item', JSON.stringify(valArr))
-    })
-  </script>
 </body>
 
 </html>
