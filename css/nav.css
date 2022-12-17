@@ -1,6 +1,7 @@
 @media only screen {
     .left {
         height: 100vh;
+        min-width: 120px;
         width: 12.5vw;
     }
 
